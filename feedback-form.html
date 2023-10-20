@@ -1,0 +1,60 @@
+<!-- Method: Superstar -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Manrope:wght@200&family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Manrope:wght@200&family=Plus+Jakarta+Sans:wght@500&family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="left-column">
+        <div class="logo-container">
+            <img class="logo" src="resources/Logo.svg">
+        </div>
+        <form class="feedback" onsubmit="return validate();">
+            <div class="form-container">
+                <div class="text-container">
+                    <span>We'd love to hear from you.</span>
+                </div>
+                <div class="input-box first-name">
+                    <span id="spnFirstName">First Name*</span>
+                    <input class="input-field" id="firstName" type="text" placeholder="Please type your first name">
+                </div>
+                <div class="input-box last-name">
+                    <span id="spnLastName">Last Name*</span>
+                    <input class="input-field" id="lastName" type="text" placeholder="Please type your last name">
+                </div>
+                <div class="input-box email">
+                    <span id="spnEmail">Email Address*</span>
+                    <input class="input-field" id="email" type="text" placeholder="Please type your email address">
+                    <label id="lblEmail" style="color: red; visibility: hidden">Invalid Email Address</label>
+                </div>
+                <div class="input-box address">
+                    <span id="spnAddress">address*</span>
+                    <input class="input-field" id="address" type="text" placeholder="Please type your address">
+                </div>
+                <div class="button-container">
+                    <button class="submit-btn"  type="submit">Submit</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <div class="right-column">
+        <img class="bgImg" src="resources/jordan-steranka-lpddCskeg4A-unsplash@2x.png">
+    </div>
+</div>
+<script src="feedback-form.js"></script>
+</body>
+</html>
