@@ -39,7 +39,7 @@ function checkEmpty(string){
     return false;
 }
 function checkWrongEmail(string){
-    let regx=/[\w\.-]+@[\w\.-]+\.\w+$/;
+    const regx=/[\w\.-]+@[\w\.-]+\.\w+$/;
     if(regx.test(string)){
         return false;
     }
